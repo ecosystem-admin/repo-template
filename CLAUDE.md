@@ -17,7 +17,7 @@ Issues and pull requests use these labels:
 - `refactor`: code changes that neither fix a bug nor add a feature
 - `chore`: maintenance and tooling work
 
-The labels are defined in `scripts/labels.json`. To change them, edit that file and run `scripts/sync-labels.sh [owner/repo]` (needs `gh` and `jq`); the script creates or updates labels and never deletes any.
+The labels are defined in `scripts/labels.json`. To change them, edit that file and run `scripts/sync-labels.sh [--prune] [owner/repo]` (needs `gh` and `jq`); the script creates or updates labels, and only deletes labels that aren't in the file when `--prune` is given.
 
 ## Issue template
 
